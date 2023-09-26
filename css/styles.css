@@ -163,3 +163,14 @@ Header
   font-size: 1.25rem;
   padding: 1rem 1.75rem;
 }
+
+/* content divider - This is the line after the header*/
+.contend-divider {
+  height: 0.5rem;
+  background: linear-gradient(
+    to left,
+    var(--primary-color),
+    #e90ec4,
+    var(--primary-color)
+  );
+}
