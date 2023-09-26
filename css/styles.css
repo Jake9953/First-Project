@@ -127,7 +127,26 @@ More Global CSS
   clear: both;
   display: table;
 }
+.section-tittle h3 {
+  font-family: var(--font-family-secondary);
+  color: var(--primary-color);
+}
+.section-tittle {
+  margin-bottom: 2rem;
+}
+.section-center {
+  padding: 4rem 0;
+  width: 85vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
 
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vh;
+    padding: 4rem 1rem;
+  }
+}
 /* 
 =============
 Header
@@ -184,7 +203,7 @@ Header
 
 /* 
 =============
-Skills
+Skills Section
 =============
 */
 
@@ -236,3 +255,9 @@ Skills
     width: 25%;
   }
 }
+
+/* 
+=============
+about
+=============
+*/
