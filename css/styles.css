@@ -261,3 +261,40 @@ Skills Section
 about
 =============
 */
+.about-img,
+.about-info {
+  padding: 2rem 0;
+}
+
+.about-picture-container {
+  background: var(--primary-color);
+  border: 0.5rem solid var(--primary-color);
+  max-width: 30rem;
+  /* extra style */
+  overflow: hidden;
+}
+
+.about-pictture {
+  transition: var(--transition);
+}
+
+.about-picture-container:hover .about-picture {
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+
+.about-text {
+  max-width: 416px;
+  color: var(--color-gray-5);
+}
+
+@media screen and (min-width: 992px) {
+  .about-img,
+  .about-info {
+    float: left;
+    width: 50%;
+  }
+  .about-info {
+    padding: 3rem;
+  }
+}
