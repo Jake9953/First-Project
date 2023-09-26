@@ -121,6 +121,13 @@ More Global CSS
   background: var(--primary-color-light);
 }
 
+.clearfx::after,
+.clearfx::before {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* 
 =============
 Header
@@ -173,4 +180,59 @@ Header
     #e90ec4,
     var(--primary-color)
   );
+}
+
+/* 
+=============
+Skills
+=============
+*/
+
+.skills {
+  background: var(--color-gray-10);
+}
+
+.skills {
+  padding: 2.5rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.skill-icon {
+  font-size: 40px;
+  margin-bottom: 1.25rem;
+  transition: var(--transition);
+  display: inline-block;
+  color: var(--primary-color);
+}
+
+.skill-text {
+  color: var(--color-gray-5);
+  max-width: 17rem;
+  margin: 0 auto;
+}
+
+.skill:hover {
+  background: var(--color-white);
+  box-shadow: 0 2px var(--primary-color);
+}
+
+.skill:hover .skill-icon {
+  transform: translateY(-5px);
+}
+
+/* This media screen creates a two column layout on a small screen - preferably 2 layers  */
+
+@media screen and (min-width: 576px) {
+  .skill {
+    float: left;
+    width: 50%;
+  }
+}
+
+/* This media screen creates a 4 column layer out on a big screen - preferably 1 layer,  with the four skills  */
+@media screen and (min-width: 1200px) {
+  .skill {
+    width: 25%;
+  }
 }
