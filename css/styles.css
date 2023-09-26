@@ -304,9 +304,9 @@ about
 products
 =============
 */
-/* .product {
+.product {
   background: var(--color-gray-10);
-} */
+}
 
 .product article {
   padding: 2rem 0;
