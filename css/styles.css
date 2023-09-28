@@ -162,6 +162,75 @@ nav btn
   z-index: 1;
   cursor: pointer;
   /* animation */
+  animation: bounce 2s ease infinite;
+}
+/* 
+=============
+Animation
+=============
+*/
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-200px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateX(50px);
+    opacity: 0.75;
+  }
+  100% {
+    transform: scale(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(200px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateX(-50px);
+    opacity: 0.75;
+  }
+  100% {
+    transform: scale(0px);
+    opacity: 1;
+  }
+}
+@keyframes show {
+  0% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* 
@@ -256,6 +325,7 @@ Header
   font-family: var(--font-family-secondary);
   color: var(--primary-color);
   /* animation */
+  animation: slideFromRight 5s ease-in-out 1;
 }
 
 .banner h1 {
@@ -264,6 +334,7 @@ Header
   margin-top: 1.25re;
   margin-bottom: 2rem;
   /* animation */
+  animation: slideFromLeft 5s ease-in-out 1;
 }
 
 .banner-btn {
@@ -271,6 +342,7 @@ Header
   outline-offset: 0.25rem;
   font-size: 1.25rem;
   padding: 1rem 1.75rem;
+  animation: show 5s linear 1;
 }
 
 /* content divider - This is the line after the header*/
