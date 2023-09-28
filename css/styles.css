@@ -149,13 +149,12 @@ More Global CSS
 }
 /* 
 =============
-nav bar
+nav btn
 =============
 */
 
 .nav-btn {
   position: fixed;
-
   top: 5%;
   left: 5%;
   font-size: 2.5rem;
@@ -163,6 +162,72 @@ nav bar
   z-index: 1;
   cursor: pointer;
   /* animation */
+}
+
+/* 
+=============
+nav bar
+=============
+*/
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--color-gray-10);
+  z-index: 2;
+  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.2);
+  /* hide navbar */
+  transform: translateX(-100%);
+  transition: var(--transition);
+}
+
+.showNav {
+  transform: translate(0);
+}
+
+.navbar-header {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.nav-close {
+  font-size: 32px;
+  cursor: pointer;
+  color: #f29c9c;
+  transition: var(--transition);
+}
+
+.nav-close:hover {
+  color: #bb2525;
+}
+
+.nav-items {
+  list-style-type: none;
+}
+
+.nav-link {
+  display: block;
+  font-size: 1.5rem;
+  padding: 0.25rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+}
+
+.nav-link:hover {
+  background: var(--primary-color-light);
+  color: var(--primary-color);
+  padding-left: 1.5rem;
+  border-left: 0.25rem solid var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .nav-bar {
+    width: 30%;
+    max-width: 20rem;
+  }
 }
 /* 
 =============
