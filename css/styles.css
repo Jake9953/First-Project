@@ -149,9 +149,27 @@ More Global CSS
 }
 /* 
 =============
+nav bar
+=============
+*/
+
+.nav-btn {
+  position: fixed;
+
+  top: 5%;
+  left: 5%;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  z-index: 1;
+  cursor: pointer;
+  /* animation */
+}
+/* 
+=============
 Header
 =============
 */
+
 .header {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
